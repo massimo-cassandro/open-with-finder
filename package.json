@@ -1,0 +1,40 @@
+{
+  "name": "open-with-finder",
+  "displayName": "Open with Finder",
+  "description": "Opens selected file using OSX Finder default",
+  "publisher": "mazz",
+  "version": "1.0.1",
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "repository": "https://github.com/massimo-cassandro/open-with-finder",
+  "license": "MIT",
+  "keywords": [
+    "vscode-extension"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:mazz.openWithFinder"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "mazz.openWithFinder",
+        "title": "Open With Finder"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "mazz.openWithFinder"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "test": "node ./test/runTest.js"
+  }
+}
