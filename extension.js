@@ -21,7 +21,9 @@ function activate(context) {
     cp.exec(`open "${e.path}"`, (err, stdout, stderr) => {
       // console.log('stdout: ' + stdout);
       // console.log('stderr: ' + stderr);
-      vscode.window.showInformationMessage('Opening “' + e.path.split('/').pop() + '”');
+      let message = 'Opening “' + e.path.split('/').pop() + '”';
+      //vscode.window.showInformationMessage(message);
+      vscode.window.setStatusBarMessage(message, 8000);
       if (err) {
         vscode.window.showErrorMessage(
           'e.path: ' + e.path + '\n'+
