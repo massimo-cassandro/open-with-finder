@@ -37,5 +37,9 @@
   },
   "scripts": {
     "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "vsce": "^1.93.0"
   }
 }
