@@ -39,7 +39,7 @@
     "test": "node ./test/runTest.js"
   },
   "devDependencies": {
-    "eslint": "^7.28.0",
+    "eslint": "^9.39.1",
     "vsce": "^1.93.0"
   }
 }
